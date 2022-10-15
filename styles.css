@@ -20,6 +20,12 @@ nav {
   padding: 32px;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
 .container {
   padding-top: 64px;
   display: flex;
