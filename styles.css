@@ -1,25 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Space Mono";
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  font-family: "Inconsolata";
+  font-weight: 700;
+  font-size: 24px;
+  padding: 32px;
 }
 
 .container {
-  height: 100vh;
+  padding-top: 64px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 32px;
 }
 
 .scarecrow__container {
   width: 50%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.scarecrow__img {
+  width: 80%;
 }
 
 .text__container {
   width: 50%;
   display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 48px;
+}
+
+.bad__news--heading {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+
+.bad__news--para {
+  color: #4f4f4f;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  padding: 56px 0;
+}
+
+.bad__news--button {
+  background-color: #333333;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 24px 56px;
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: 24px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text__container {
+    padding-top: 56px;
+    width: 100%;
+    margin: 4px;
+    padding-left: 24px;
+  }
+
+  .bad__news--heading {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0 em;
+  }
+
+  .bad__news--para {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .scarecrow__container {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
